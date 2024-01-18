@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* 淡色背景 */
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+#cardContainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    margin: 50px;
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(92, 74, 74, 0.2); /* 玻璃拟态效果 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform: scale(1); /* CSS transform scale属性放大卡片，1.1是放大10% */
+    transition: transform 0.6s, background-color 0.6s; /* 在这里添加背景颜色的过渡 */
+    transform-style: preserve-3d;
+    cursor: pointer; 
+}
+
+.card.flipped {
+    transform: rotateY(180deg)scale(1.8);
+}
+
+.card .card-content {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card .card-back {
+    /* background-color: #ff4800; */
+    color: #ffffff;
+    border-radius: 1px;
+}
+
+.card .card-front {
+    transform: rotateY(180deg);
+    color: #ff4800;
+    /* background-color: #fff; */
+}
+
+
+/* 卡片未翻转时的背景颜色 */
+.card {
+    background-color: #ffffff6e;
+}
+
+/* 卡片翻转后的背景颜色 */
+.card.flipped {
+    background-color: #ffffff; /* 蓝色背景 */
+    /* ...其他样式... */
+}
+
+/* 增加卡片间的间隔 */
+.card {
+    margin: 0 20px; /* 两侧的间隔增加 */
+    transition: transform 0.3s ease; /* 平滑变换效果 */
+}
+
+.card .front {
+    background-color: orange; /* 正面的颜色 */
+  }
+  
+  .card .back {
+    background-color: white; /* 背面的初始颜色 */
+  }
+  
+  .card.flipped .back {
+    background-color: blue; /* 翻转后背面的颜色 */
+  }
+  
+
+  
+  #fireworkscontainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+  }
+  
+  .particle {
+    position: absolute;
+    opacity: 1;
+    border-radius: 50%; /* 圆形粒子 */
+  }
+  
+  /* 定义不同形状的粒子 */
+  .star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 15px;
+    height: 15px;
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .square {
+    width: 10px;
+    height: 10px;
+  }
+
+#gradient
+{
+ width: 100%;
+ height: 800px;
+ padding: 0px;
+ margin: 0px;
+}
+
+.drawButton {
+    padding: 10px 20px; /* 上下10px，左右20px的内边距 */
+    background-image: linear-gradient(to right, #a18cd1, #fbc2eb); /* 紫色到粉色的渐变 */
+    border: none; /* 无边框 */
+    color: white; /* 文本颜色为白色 */
+    text-transform: uppercase; /* 文本转为大写 */
+    font-weight: bold; /* 字体加粗 */
+    border-radius: 25px; /* 边角半径为25px，产生圆角效果 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* X偏移0，Y偏移4px，模糊半径6px的阴影，半透明 */
+    cursor: pointer; /* 鼠标悬停时显示指针样式 */
+    outline: none; /* 点击时无轮廓 */
+  }
+  
+  .drawButton:hover {
+    background-image: linear-gradient(to right, #957dad, #e0ace4); /* 鼠标悬停时的渐变颜色 */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* 鼠标悬停时的阴影更大更暗 */
+  }
+  

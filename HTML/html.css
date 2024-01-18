@@ -1,0 +1,214 @@
+.myButton {
+    background-color: #ff9100; /* 设置按钮的背景颜色为红色 */
+    color: #ffffff; /* 设置按钮的文字颜色为白色 */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加按钮的阴影效果 */
+    border: 1px solid #ff9100; /* 添加按钮的边框样式 */
+    transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
+    color: #ffffff; /* 当鼠标悬停在按钮上时，改变按钮的文字颜色为白色 */
+    border-radius: 10px; /* 圆角大小 */
+    width: 150px; /* 按钮宽度 */
+    height: 50px; /* 按钮高度 */
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+.myButton:hover {
+    background-color: #ffc05c; /* 当鼠标悬停在按钮上时，改变按钮的背景颜色为红色 */
+    transform: scale(1.1); /* 悬停时进行放大操作 */
+}
+
+.containerButton {
+    /* position: absolute; */
+
+    left: 0;
+    width: 30%;
+    top: 0;
+    height: 20%;
+
+    display: flex;
+    /* flex-direction: column; 垂直排列子元素 */
+    justify-content: flex-start;
+    /* flex-start：默认值，将项目靠近主轴起始端对齐。
+    flex-end：将项目靠近主轴末尾端对齐。
+    center：将项目在主轴上居中对齐。
+    space-between：将项目均匀分布在主轴上，首个项目靠近起始端，最后一个项目靠近末尾端，其他项目之间有相等的间距。
+    space-around：将项目均匀分布在主轴上，并在它们周围创建相等的间距。每个项目两侧的空白间隔是相邻两个项目之间空白间隔的一半。
+    space-evenly：将项目均匀分布在主轴上，并在容器两侧留出相等的空白空间     */
+    margin-bottom: 10px;
+}
+.containerText {
+    position: absolute;
+
+    right: 0;
+    width: 50%;
+    top: 0;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column; /* 垂直排列子元素 */
+}
+.linkedListContentElementcontainerText {
+    position: absolute;
+
+    right: 0;
+    width: 500;
+    top: 0;
+    height: 800px;
+
+    display: flex;
+    flex-direction: column; /* 垂直排列子元素 */
+}
+.containerInput {
+    /* position: absolute; */
+    /* display: flex; */
+    flex-direction: column; /* 垂直排列子元素 */
+    /* padding-bottom: 20px; */
+}
+
+.inputButton{
+    background-color: #000000; /* 设置按钮的背景颜色为红色 */
+    color: #ffffff; /* 设置按钮的文字颜色为白色 */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加按钮的阴影效果 */
+    border: 1px solid #000000; /* 添加按钮的边框样式 */
+    transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
+    color: #ffffff; /* 当鼠标悬停在按钮上时，改变按钮的文字颜色为白色 */
+    border-radius: 10px; /* 圆角大小 */
+    width: 200px; /* 按钮宽度 */
+    height: 25px; /* 按钮高度 */
+    /* margin-bottom: -1px; */
+}
+.inputButton:hover{
+    background-color: #595959; /* 当鼠标悬停在按钮上时，改变按钮的背景颜色为红色 */
+    /* transform: scale(1.2); */
+}
+h0{
+    font-size: 50px;
+    font-weight: bold;
+}
+h1 {
+    font-style: italic;
+    font-size: 30px;
+    /* font-size: 1.2em;：将字体大小设置为父元素字体大小的1.2倍。
+    font-size: 80%;：将字体大小设置为父元素字体大小的80%。
+    font-size: medium;：将字体大小设置为浏览器默认的中等大小。 */
+}
+.child-buttons {
+    display: none;
+    /* left: 0;
+    width: 15%; */
+}
+
+.ChoiceButton_f {
+    background-color: #ff4400; /* 设置按钮的背景颜色为红色 */
+    color: #ffffff; /* 设置按钮的文字颜色为白色 */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加按钮的阴影效果 */
+    border: 1px solid #ff4400; /* 添加按钮的边框样式 */
+    transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
+    border-radius: 10px; /* 圆角大小 */
+    width: 150px; /* 按钮宽度 */
+    height: 50px; /* 按钮高度 */
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+.ChoiceButton_f:hover {
+    background-color: #ffa381; /* 当鼠标悬停在按钮上时，改变按钮的背景颜色为红色 */
+    transform: scale(1.1); /* 悬停时进行放大操作 */
+}
+.ContainerChoiceButton_f {
+    /* position: absolute; */
+
+    left: 0;
+    width: 30%;
+    /* top: 0;
+    height: 40%;  */
+
+    display: flex;
+    /* flex-direction: column; 垂直排列子元素 */
+    justify-content: flex-start;
+    /* flex-start：默认值，将项目靠近主轴起始端对齐。
+    flex-end：将项目靠近主轴末尾端对齐。
+    center：将项目在主轴上居中对齐。
+    space-between：将项目均匀分布在主轴上，首个项目靠近起始端，最后一个项目靠近末尾端，其他项目之间有相等的间距。
+    space-around：将项目均匀分布在主轴上，并在它们周围创建相等的间距。每个项目两侧的空白间隔是相邻两个项目之间空白间隔的一半。
+    space-evenly：将项目均匀分布在主轴上，并在容器两侧留出相等的空白空间     */
+}
+
+.ContainerChoiceButton_c1 {
+    position: absolute;
+    /* position: fixed;
+    position: relative; */
+    margin-top: 10px;
+    top: 435px;
+    left: 10px;
+    width: 11%;
+    /* display: flex;
+    flex-direction: column; */
+}
+.ContainerChoiceButton_c2 {
+    position: absolute;
+    float: left;
+    margin-top: 10px;
+    top: 435px;
+    left: 170px;
+    width: 11%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.ChoiceButton_c{
+    background-color: #ff4400; /* 设置按钮的背景颜色为红色 */
+    color: #ffffff; /* 设置按钮的文字颜色为白色 */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加按钮的阴影效果 */
+    /* border: 1px solid #ff4400;添加按钮的边框样式 */
+    width: 150px;
+    height: 30px;
+    margin-bottom:5px
+
+}
+.ChoiceButton_c:hover{
+    background-color: #ffc05c; /* 当鼠标悬停在按钮上时，改变按钮的背景颜色为红色 */
+    transform: scale(1.1); /* 悬停时进行放大操作 */
+}
+.ChoiceButton_2c{
+    background-color: #ff44000f; /* 设置按钮的背景颜色为红色 */
+    color: #ff4400; /* 设置按钮的文字颜色为白色 */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加按钮的阴影效果 */
+    border: 1px solid #ff4400;
+    width: 150px;
+    height: 30px;
+    margin-bottom:5px
+
+}
+.ChoiceButton_2c_hf:hover{
+    background-color: #ff44005b; /* 当鼠标悬停在按钮上时，改变按钮的背景颜色为红色 */
+    color: #782000; /* 设置按钮的文字颜色为白色 */
+    transform: scale(1.1); /* 悬停时进行放大操作 */
+}
+
+.ChoiceButton_c_hf{
+    background-color: #ff4400; /* 设置按钮的背景颜色为红色 */
+    color: #ffffff; /* 设置按钮的文字颜色为白色 */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加按钮的阴影效果 */
+    /* border: 1px solid #ff4400;添加按钮的边框样式 */
+    width: 75px;
+    height: 30px;
+    margin-bottom:5px
+
+}
+.ChoiceButton_c:hover{
+    background-color: #ffc05c; /* 当鼠标悬停在按钮上时，改变按钮的背景颜色为红色 */
+    transform: scale(1.1); /* 悬停时进行放大操作 */
+}
+
+.ChoiceButton_c_Input{
+    background-color: #ff44000f; /* 设置按钮的背景颜色为红色 */
+    color: #000000; /* 设置按钮的文字颜色为白色 */
+    border: 1px solid #ff4400;
+    width: 150px;
+    height: 30px;
+    margin-bottom:5px
+}
+
+table {
+    border-collapse: collapse; /* 合并单元格边框 */
+    border-spacing: 10px; /* 设置单元格之间的间距 */
+  }

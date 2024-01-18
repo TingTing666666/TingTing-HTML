@@ -1,0 +1,103 @@
+<!--
+ * @Author: TingTing ibm_1@126.com
+ * @Date: 2023-10-30 21:32:03
+ * @LastEditors: TingTing ibm_1@126.com
+ * @LastEditTime: 2023-11-02 15:23:55
+ * @FilePath: \HTML\hotel.html
+ * @Description: 酒店管理系统HTML版
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>酒店管理系统HTML版</title>
+        <style>
+            /* body{
+                height: 130vh;
+            } */
+            .container {
+                text-align: center;
+            }
+            .pre {
+                text-align: left;
+                white-space: pre-wrap;
+                font-family: "Courier New", Courier, monospace;
+            }
+        </style>
+        <link rel="stylesheet" href="html.css">
+    </head>
+    <body>
+        <h0>酒店管理系统HTML版</h0>
+        <h1>文件导入</h1>
+        <div class="containerInput">
+            <!-- 选择客户文件按钮 -->
+            <input type="file" id="customerFile" accept=".txt" class="inputButton"><br><br>
+    
+            <!-- 选择客房文件按钮 -->
+            <input type="file" id="roomFile" accept=".txt" class="inputButton" onchange="handleFileUpload(event)"><br><br>
+            
+        </div>
+        <h1>调试功能</h1>
+        <div class="containerButton">    
+            <!-- 打印客户文件按钮 -->
+            <button onclick="PrintCustomerFile()" class="myButton">打印客户文件</button><br><br>
+    
+             <!-- 打印客房文件按钮 -->
+            <button onclick="PrintRoomFile()" class="myButton">打印客房文件</button><br><br>
+
+            <!-- 清除显示按钮 -->
+            <button onclick="clearPrintCustomerFile_and_PrintRoomFile()" class="myButton">清除显示</button><br><br>
+        </div>
+
+            <div class="containerText">
+                <!-- 客户文件内容显示区域 -->
+                <pre id="customerContent" class="containerText"></pre>
+                <!-- 客房文件内容显示区域 -->
+                <pre id="roomContent" class="containerText"></pre>
+            </div>
+            
+            <div class="ContainerChoiceButton_f">
+                <button id="button1" class="ChoiceButton_f">按钮1</button>
+                <button id="button2" class="ChoiceButton_f">按钮2</button>
+            </div>
+
+            <div id="c1" class="child-buttons child-buttons1 ContainerChoiceButton_c1" style="display: none">
+                <button class="ChoiceButton_c">子按钮1</button>
+                <button class="ChoiceButton_c">子按钮2</button>
+                <button class="ChoiceButton_c">子按钮3</button>
+                <button class="ChoiceButton_c">子按钮4</button>
+                <button class="ChoiceButton_c">子按钮5</button>
+                <button class="ChoiceButton_c">子按钮6</button>
+                <button class="ChoiceButton_c">子按钮7</button>
+            </div>
+            
+            <div id="c2"class="child-buttons child-buttons2 ContainerChoiceButton_c2" style="display: none">
+                
+                <button onclick="searchRooms()" class="ChoiceButton_c_hf">搜索房间</button>
+                    <button onclick="ClearSearchRoom()" class="ChoiceButton_c_hf">清除显示</button><br><br>
+                    <div id="SearchRoomResult" ContainerChoiceButton_c2></div> <!-- 用于显示搜索结果的<div>元素 -->
+                
+                <button id="childButton9" class="ChoiceButton_c">添加房间</button>
+                    <br>
+                    <div id="roomInputFields" style="display: none" ContainerChoiceButton_c2>
+                        <input type="text" id="roomidInput" placeholder="房间号" class="ChoiceButton_c_Input">
+                        <input type="text" id="roomtypeInput" placeholder="房间类型" class="ChoiceButton_c_Input">
+                        <input type="text" id="roompriceInput" placeholder="房间价格" class="ChoiceButton_c_Input">
+                        <button id="addRoomButton" onclick="addRoom()" style="display: none" class="ChoiceButton_2c">添加房间</button>
+                        <button id="saveRoomsButton" onclick="saveRoomsToFile()" style="display: none" class="ChoiceButton_2c">保存房间数据</button>
+                    </div>
+                <button class="ChoiceButton_c">子按钮10</button>
+                <button class="ChoiceButton_c">子按钮11</button>
+                <button class="ChoiceButton_c">子按钮12</button>
+                <button class="ChoiceButton_c">子按钮13</button>
+                <button class="ChoiceButton_c">子按钮14</button>
+                <!-- 按钮用于显示链表内容 -->
+                <button onclick="showLinkedListContent()" class="ChoiceButton_c">显示链表内容</button> 
+                  
+            </div>
+                <div id="linkedListContentElement" class="linkedListContentElementcontainerText"></div>
+                <!-- <div id="linkedListContent" ContainerChoiceButton_c2></div>用于显示链表内容的元素 -->
+    <script src="hotel.js"></script>
+</body>
+</html>
+
+
